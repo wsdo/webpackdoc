@@ -1,0 +1,229 @@
+@import 'reset.styl'
+
+body
+	font-size: 16px
+	background-color: #fff
+	line-height: 1.4
+	color: #333
+	sansSerif()
+
+h1
+	font-size: 30px
+	text-transform: uppercase
+	border-bottom: 1px solid #ddd
+
+h2
+	font-size: 24px
+	font-weight: bold
+
+h3
+	font-size: 22px
+	font-weight: normal
+
+h4
+	font-size: 18px
+
+h1, h2, h3
+	margin-top: 20px
+	margin-bottom: 10px
+
+h4, h5, h6
+	margin-top: 10px
+	margin-bottom: 10px
+
+h1, h2, h3, h4, h5, h6
+	sansSerif()
+	font-weight: 500
+	line-height: 1.1
+
+.page-header
+	padding: 0
+	margin: 40px 0 20px
+	text-transform: uppercase
+	text-align: right
+	background-color: #eee
+	border-right: 10px solid #ddd
+	padding: .5em
+	color: #333
+	h1
+		margin: 0
+		padding: 0
+		border: none
+
+a
+	color: #006a86
+	text-decoration: none
+	&:hover, &:active
+		outline: 0
+	&:hover, &:focus
+		color: darken(@color, 30%)
+		text-decoration: underline
+
+hr
+	margin-top: 20px
+	margin-bottom: 20px
+	border: none
+	border-top: 1px dashed #999
+	color: #fff
+	background-color: #fff
+	height: 1px
+
+p
+	margin-bottom: 10px;
+
+ul
+	display: block
+	list-style-type: disc
+	-webkit-margin-before: 1em
+	-webkit-margin-after: 1em
+	-webkit-margin-start: 0px
+	-webkit-margin-end: 0px
+	-webkit-padding-start: 40px
+
+ol
+	list-style-type: decimal
+	li
+		margin-left: 35px;
+
+ul, ol
+	margin-top: 0
+	margin-bottom: 10px
+
+li
+	display: list-item;
+	text-align: -webkit-match-parent;
+
+code, pre
+	color: #333;
+	background-color: #f5f5f5;
+	border-radius: 4px;
+
+code
+	padding: 2px 4px;
+	font-size: 90%;
+	white-space: nowrap;
+
+pre
+	display: block
+	padding: 9.5px
+	margin: 0 0 10px
+	font-size: 13px
+	word-break: break-all
+	word-wrap: break-word
+	border: 1px solid #ccc
+
+pre code
+	padding: 0
+	font-size: inherit
+	color: inherit
+	white-space: pre-wrap
+	background-color: transparent
+	border-radius: 0
+
+code
+	monospace()
+
+strong
+	font-weight: 700
+
+.pull-right
+	float: right !important
+
+.table
+	border: 1px solid #ddd
+	width: 100%
+	max-width: 100%
+	margin-bottom: 20px
+	> thead > tr > th
+		border: 1px solid #ddd;
+		border-bottom-width: 2px;
+		vertical-align: bottom
+		border-bottom: 2px solid #ddd
+		padding: 8px
+		border-top: 0
+		font-weight: 700
+	> tbody > tr > td
+		border: 1px solid #ddd
+		vertical-align: bottom
+		padding: 8px;
+		border-top: 0
+	> tbody > tr:nth-child(odd) > td
+		background-color: #f9f9f9
+
+blockquote
+	padding: 5px 20px
+	margin: .5em 0 1em 0
+	border-left: 5px solid #ddd
+	background-color: #f9f9f9
+	font-style: italic
+
+.panel
+	margin-bottom: 20px
+	background-color: #FFF
+	border-radius: 4px
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
+	border: 1px solid rgba(0, 0, 0, 0)
+	&.panel-add
+		border-color: #D6E9C6
+		background-color: #DFF0D8
+		color: #468847
+	&.panel-update
+		border-color: #BCE8F1
+		background-color: #D9EDF7
+		color: #3A87AD
+	&.panel-update
+		border-color: #BCE8F1
+		background-color: #D9EDF7
+		color: #3A87AD
+	> pre
+		margin: 0
+	> .panel-title
+		padding: 10px 15px
+		border-bottom: 1px solid rgba(0, 0, 0, 0)
+		border-top-right-radius: 3px
+		border-top-left-radius: 3px
+		margin-top: 0
+		margin-bottom: 0
+		font-size: 16px
+
+p > img
+	max-width: 100%
+
+.announcement
+	text-align: center
+	.announcement-inner
+		display: inline-block
+		border-left: 1px solid #333
+		border-right: 1px solid #333
+		border-bottom: 1px solid #333
+		border-bottom-left-radius: 5px
+		border-bottom-right-radius: 5px
+		padding-top: 4px
+		padding-bottom: 3px
+		padding-left: 10px;
+		padding-right: 10px;
+		font-weight: 700
+		background: #f9f9f9
+		em
+			font-weight: normal
+			font-style: italic
+			font-size: 70%
+
+@media (min-width: 992px)
+	.row
+		display: flex;
+		.col-md-3, .col-md-6, .col-md-9, .col-md-12
+			padding-left: 15px
+			padding-right: 15px
+		.col-md-3
+			flex: 3
+			min-width: 0
+		.col-md-6
+			flex: 6
+			min-width: 0
+		.col-md-9
+			flex: 9
+			min-width: 0
+		.col-md-12
+			flex: 12
+			min-width: 0

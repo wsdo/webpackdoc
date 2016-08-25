@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" type="image/png" href="/assets/favicon.png" />
+		<link rel="stylesheet" href="css/doc.css" />
+		<title>{{title}}</title>
+	</head>
+	<body>
+		<script src="js/doc.js" charset="utf-8" async></script>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 nav">
+
+					{{include logo}}
+
+					<div class="sidebar">
+						<ul><li><a href=".">Home</a></li></ul>
+						{{wiki contents}}
+					</div>
+				</div>
+
+				<div class="col-md-9">
+					<!--<div class="announcement">
+						<div class="announcement-inner">
+							<em>2014-07-04</em> Help to improve webpack by filling out <a href="https://docs.google.com/forms/d/101ZcujnVL8l575T6VRl62SfrVj5FZC1IzwMH1258GVc/viewform">this little survey</a>. Thanks!<br>
+							<em>2015-03-04</em> You can now comment doc pages (on the bottom of the page). Free feel to add comments about missing/unclear stuff or fix stuff that other people find unclear. You can use the Edit button on the top right corner.
+						</div>
+					</div>-->
+
+					<div class="pull-right">
+						<a href="https://github.com/webpack/docs/wiki/{{url}}/_edit" class="wikieditlink">Edit</a>
+					</div>
+					<div class="row">
+						<div class="col-md-12 page-header">
+							<h1 id="wikititle">{{title}}</h1>
+						</div>
+					</div>
+
+					<div class="row">
+						<div id="wiki" class="col-md-12">
+							{{wiki}}
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="pull-right">
+								<a href="https://github.com/webpack/docs/wiki/{{url}}/_edit" class="wikieditlink">Edit this page</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<div id="disqus_thread"></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<a href="https://github.com/webpack/webpack"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png" alt="Fork me on GitHub"></a>
+	</body>
+</html>
